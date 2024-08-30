@@ -1,0 +1,87 @@
+/* general */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* (*)  is used for the to access all the element  */
+*{
+    margin:0;
+    padding:0;
+}
+/* for the body of the portfolio */
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* behaviour of the HTML page */
+html{
+    scroll-behavior: smooth;
+}
+
+/* for paragraph color */
+p{
+    color:rgb(85,85,85);
+}
+
+/* TRANSITION for the links and button */
+a,.btn{
+    transition:all 300ms ease;  
+}
+
+
+/* DESKTOP NAVIGATION */
+/* all the desktop items move in one line in left or right direstion */
+nav,.nav-links{
+    display:flex;
+}
+
+/* work on navigation */
+nav{
+    justify-content:space-around;
+    align-items:center;
+
+    /* navigator takes view height of 17vh */
+    height:17vh;
+}
+.nav-links{
+    gap:2rem;
+    list-style:none;
+    font-size:1.5rem;
+}
+/* work on the navigation links */
+a{
+    color:black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+/* work on the navigation hover links */
+a:hover{
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+/* for the logo */
+.logo{
+    font-size:2rem;
+}
+.logo:hover{
+    cursor:default;
+}
+
+#hamburger-nav{
+    display:none;
+}
+
+.hamburger-menu{
+    position:relative;
+    display: inline-block;
+}
+.hamburger-icon{    
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height:24px;
+    width:30px;
+    cursor: pointer;
+}
